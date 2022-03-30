@@ -1,1 +1,3 @@
 Project-env/
+.env
+/__pycache__/
