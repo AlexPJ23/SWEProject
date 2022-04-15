@@ -4,7 +4,7 @@
 <title>Page Title</title>
 
 <head>
-    <link rel="stylesheet" href={{ url_for( 'static', filename='style.css' ) }} />
+    <link rel="stylesheet" href={{ url_for( 'static', filename='styles.css' ) }} />
 </head>
 
 <body>
@@ -25,12 +25,13 @@
 {% if song_preview == None %}
     <h2>No Song Preview</h2>
 {% else %}
+<br>
     <audio controls>
         <source src={{song_preview}} type="audio/mpeg">
     </audio>
 {% endif %}
 <br>
-<h2><a href = "{{spotify_link}}">Link to Song!</h2>
+<button><a href = "{{spotify_link}}">Link to Song!</button>
 
 </body>
 
