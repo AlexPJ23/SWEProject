@@ -1,10 +1,5 @@
 /* default to border-box */
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
+  * {
     text-align: center;
     box-sizing: inherit;
   }
@@ -16,12 +11,20 @@ html {
   }
 
   
-  h1 {
+  h2 {
     font-family: verdana, arial, sans-serif; 
-    color: #DC143C;
-    font-size: 20px;
+    color: rgba(0, 0, 154, 0.571);
+    font-size: 40px;
   }
  
-  img{
-      border-radius = 20px;
+  img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    width: 25%;
   }
+
+  button{
+    border-radius: 18px;
+  }
+  
