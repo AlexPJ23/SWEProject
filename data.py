@@ -2,20 +2,21 @@ from auth import get_auth
 import random
 import requests
 
-def get_data():
+def get_data(artist_id):
     access_token = get_auth()
     headers = {
         'Authorization': 'Bearer {TOKEN}'.format(TOKEN=access_token)
     }
     
-    URL = 'https://api.spotify.com/v1/artists/{id}/top-tracks'.format(id='3hcs9uc56yIGFCSy9leWe7')
+    URL = 'https://api.spotify.com/v1/artists/{id}/top-tracks'.format(id=artist_id)
     data = requests.get(URL + "?market=US", headers = headers)
     
     data = data.json()
-    print(data)
+    #print(data)
+    #print(len(data['tracks']))
     
     #rand = random.randint(0, len(data['tracks']) - 1)
-    rand = 2
+    rand = random.randint(0, len(data['tracks']) - 1)
 
     artist_names = []
     for i in data["tracks"][rand]["artists"]:
