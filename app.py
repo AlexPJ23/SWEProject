@@ -11,7 +11,7 @@ def hello():
     '''This function is the main function for the application.'''
 
     '''Dua Lipa, Olivia Rodrigo, Ariana Grande'''
-    artist_list = ['6M2wZ9GZgrQXHCFfjv46we', '1McMsnEElThX1knmY4oliG', '66CXWjxzNUsdJxJ2JdwvnR']
+    artist_list = ['3hcs9uc56yIGFCSy9leWe7', '4O15NlyKLIASxsJ0PrXPfz', '66CXWjxzNUsdJxJ2JdwvnR']
 
     rand = random.randint(0, len(artist_list) - 1)
 
