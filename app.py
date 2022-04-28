@@ -10,7 +10,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 def hello():
     '''This function is the main function for the application.'''
 
-    '''Dua Lipa, Olivia Rodrigo, Ariana Grande'''
+    '''Lil Durk, LIl Uzi, Ariana Grande'''
     artist_list = ['3hcs9uc56yIGFCSy9leWe7', '4O15NlyKLIASxsJ0PrXPfz', '66CXWjxzNUsdJxJ2JdwvnR']
 
     rand = random.randint(0, len(artist_list) - 1)
